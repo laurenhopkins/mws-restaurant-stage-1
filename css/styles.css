@@ -3,7 +3,7 @@
 
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	font-size: 12pt;
 	color: #333;
 	line-height: 1.5;
 }
@@ -14,11 +14,11 @@ body {
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	font-size: 14pt;
 	color: #333;
 }
 a {
-	color: orange;
+	color: rgb(165, 108, 2);
 	text-decoration: none;
 }
 a:hover, a:focus {
@@ -155,7 +155,7 @@ nav h1 a {
   width: 80%;
 }
 #restaurants-list .restaurant-img {
-  background-color: #ccc;
+  background-color: rgb(121, 121, 121);
   display: block;
   margin: 0;
   max-width: 100%;
