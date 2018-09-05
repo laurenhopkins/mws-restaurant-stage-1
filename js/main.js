@@ -1,10 +1,9 @@
 // Make sure service worker is supported
 if('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker
-      .register('../sw.js')
-      .then(reg => console.log('Service Worker: Registered'))
-      .catch(err => console.log(`Service Worker: Error: ${err}`))
+  navigator.serviceWorker
+    .register('../sw.js')
+    .catch(function(err) {
+      console.error(err);
   });
 }
 
@@ -210,6 +209,11 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 
 } 
+
+
+function newFunction() {
+  return '../sw.js';
+}
 /* addMarkersToMap = (restaurants = self.restaurants) => {
   restaurants.forEach(restaurant => {
     // Add marker to the map
